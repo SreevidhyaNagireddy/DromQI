@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORMIQ OS | The Operating System for Smart Campus Living</title>
+    <meta name="description" content="DORMIQ OS is a premium smart campus living intelligence system. Includes AI-powered complaint routing, self-rotating QR gate passes, parent/warden consensus approval loops, room heatmaps, and security operations command centers.">
+    <!-- Main Upgraded Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons Vector Library CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js Graphics Engine CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Radial Glowing Ambient Spotlights -->
+    <div class="glow-spot" style="top: -120px; left: -100px;"></div>
+    <div class="glow-spot" style="top: 750px; right: -150px; background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, rgba(0,0,0,0) 70%);"></div>
+
+    <!-- ==========================================================================
+       1. LANDING PAGE VIEW
+       ========================================================================== -->
+    <div id="landing-view" class="landing-view">
+        <nav class="landing-navbar">
+            <div class="logo-container">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">DORMIQ OS</div>
+                <span class="logo-tag">PREMIUM</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#metrics" class="nav-link">Analytics</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+            </div>
+            <div>
+                <button onclick="navigateTo('auth')" class="btn-primary">Launch OS <i data-lucide="arrow-right"></i></button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge-container">
+                    <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block;"></span>
+                    <span>Version 2.4 Active &bull; AI Forecasting Core</span>
+                </div>
+                <h1 class="hero-headline">The Smart Operating System for <span>Campus Hostels</span></h1>
+                <p class="hero-tagline">DORMIQ OS is an investor-grade, university-level management ecosystem. We merge natural language AI dispatches, self-rotating QR gate codes, room utilization density heatmaps, and security operations centers to automate campus residential living.</p>
+                <div class="hero-actions">
+                    <button onclick="navigateTo('auth')" class="btn-primary">Get Started <i data-lucide="zap"></i></button>
+                    <a href="#features" class="btn-secondary">Explore Blueprint</a>
+                </div>
+            </div>
+            <div class="hero-graphic-container">
+                <div class="hero-dashboard-mockup glass-card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom:12px;">
+                        <div style="display:flex; gap:6px;">
+                            <span style="width:10px; height:10px; border-radius:50%; background:var(--danger);"></span>
+                            <span style="width:10px; height:10px; border-radius:50%; background:var(--warning);"></span>
+                            <span style="width:10px; height:10px; border-radius:50%; background:var(--success);"></span>
+                        </div>
+                        <span style="font-size:0.75rem; color:var(--accent); font-family: monospace;">AI ENG: Nominal</span>
+                    </div>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom: 16px;">
+                        <div class="glass-card" style="padding:16px; background:rgba(255,255,255,0.01);">
+                            <p style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">CAMPUS SCORE</p>
+                            <h4 style="font-size:1.6rem; color:var(--accent); margin-top:4px;">94.8%</h4>
+                        </div>
+                        <div class="glass-card" style="padding:16px; background:rgba(255,255,255,0.01);">
+                            <p style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">LIVE RESIDENTS</p>
+                            <h4 style="font-size:1.6rem; color:var(--text-primary); margin-top:4px;">1,280</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card" style="padding:16px; background:rgba(0, 242, 254, 0.03); border-color: rgba(0, 242, 254, 0.15);">
+                        <div style="display:flex; gap:12px; align-items:center;">
+                            <i data-lucide="brain" style="color:var(--accent); width:20px; flex-shrink:0;"></i>
+                            <div>
+                                <h5 style="font-size:0.85rem; color:var(--text-primary);">AI Operational Suggestion</h5>
+                                <p style="color:var(--text-muted); font-size:0.75rem; margin-top:2px;">Water usage peak forecasted. pre-fill tanks at 5:45 AM to balance power load.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Feature Grid -->
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Hostel Living, Re-Engineered</h2>
+                <p>Advanced automations that replace manual registers, prevent administrative bottlenecks, and protect security.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="brain"></i></div>
+                    <h3>AI Complaint Prediction</h3>
+                    <p>Natural language parsing scans student incident tickets to categorize, calculate urgency priority, assign staff, and forecast future breakdowns.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="qr-code"></i></div>
+                    <h3>Rotating Access Keys</h3>
+                    <p>Self-rotating secure entry tokens that rotate key patterns every 15 seconds, preventing passcode leakage and screenshot sharing.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="map"></i></div>
+                    <h3>Occupancy Density Matrix</h3>
+                    <p>Visual floor matrices and room color blueprints depicting active residents, vacancy levels, and capacity limits in real time.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="users"></i></div>
+                    <h3>Parent Consensus Portal</h3>
+                    <p>Outing leaves trigger automated parent consensus gates. Warden alerts verify parent approval before exit pass activations.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="shield"></i></div>
+                    <h3>Security Terminal SOC</h3>
+                    <p>Interactive check-in consoles, RFID logging, anomaly trackers, and campus-wide emergency lockdowns.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon-wrapper"><i data-lucide="terminal"></i></div>
+                    <h3>Command Palette Ctrl+K</h3>
+                    <p>Navigate and search dashboards, actions, database logs, and configuration roles with single key hooks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Metric Section -->
+        <section id="metrics" class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h4>98.6%</h4>
+                    <p>SLA Resolution Target</p>
+                </div>
+                <div class="stat-item">
+                    <h4>&lt; 10s</h4>
+                    <p>QR Scanner Verification</p>
+                </div>
+                <div class="stat-item">
+                    <h4>14,200+</h4>
+                    <p>Secure Access Logged</p>
+                </div>
+                <div class="stat-item">
+                    <h4>35%</h4>
+                    <p>Utility Load Reduction</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header">
+                <h2>Designed for High-Performing Campuses</h2>
+                <p>Discover how universities deploy DORMIQ OS to secure facility pipelines and protect residents.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-text">"Allocating 2,500 students to housing structures used to involve endless paper binders. The Interactive Heatmap lets us assign entire dorms in minutes."</p>
+                    <div class="user-profile">
+                        <div class="avatar"><i data-lucide="user"></i></div>
+                        <div class="user-info">
+                            <h5>Prof. Harish Sen</h5>
+                            <p>Director of Housing, IIT Kanpur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-text">"Security at our gate became flawless. Rotating QR passes cannot be screen-shared, and parent leave tracking keeps students safe."</p>
+                    <div class="user-profile">
+                        <div class="avatar"><i data-lucide="user"></i></div>
+                        <div class="user-info">
+                            <h5>Col. Sanjay Roy</h5>
+                            <p>Campus Security Operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <p class="testimonial-text">"The AI Incident Desk is incredibly fast. I typed a plumbing leak description, and a technician arrived with parts in 15 minutes."</p>
+                    <div class="user-profile">
+                        <div class="avatar"><i data-lucide="user"></i></div>
+                        <div class="user-info">
+                            <h5>Sneha Kulkarni</h5>
+                            <p>Student Council President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="landing-footer">
+            <div class="logo-container">
+                <div class="logo-icon">D</div>
+                <div class="logo-text">DORMIQ OS</div>
+            </div>
+            <p>&copy; 2026 DORMIQ OS. Investor Hackathon Edition.</p>
+        </footer>
+    </div>
+
+    <!-- ==========================================================================
+       2. AUTHENTICATION PORTAL VIEW
+       ========================================================================== -->
+    <div id="auth-view" class="auth-view" style="display: none;">
+        <div class="auth-card glass-card">
+            <div class="auth-header">
+                <div class="logo-container" style="justify-content: center; margin-bottom: 20px;">
+                    <div class="logo-icon">D</div>
+                    <div class="logo-text">DORMIQ OS</div>
+                </div>
+                <h2>Initialize OS Session</h2>
+                <p>Access your Smart Campus Living Portal</p>
+            </div>
+
+            <!-- Login and Roles Selector Tabs -->
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="auth-email">OS Authorized Email</label>
+                    <input type="email" id="auth-email" class="input-field" value="aarav.mehta@dormiq.edu" placeholder="student@dormiq.edu" required>
+                </div>
+                <div class="form-group">
+                    <label for="auth-password">Password</label>
+                    <input type="password" id="auth-password" class="input-field" value="dormiq2026" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+                    Sign In to Portal <i data-lucide="arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="demo-accounts-box">
+                <h5><i data-lucide="help-circle"></i> Hackathon Judge Quick Credentials</h5>
+                <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Select credentials to log in, or click on the floating role simulator at the bottom:</p>
+                <div class="demo-account-item">Student: <span>aarav.mehta@dormiq.edu</span></div>
+                <div class="demo-account-item">Warden: <span>sarah.jenkins@dormiq.edu</span></div>
+                <div class="demo-account-item">Admin: <span>chief.admin@dormiq.edu</span></div>
+                <div class="demo-account-item">Security: <span>security.desk@dormiq.edu</span></div>
+                <div class="demo-account-item">Parent: <span>vikram.mehta@dormiq.edu</span></div>
+            </div>
+
+            <div class="auth-footer">
+                Return to <a href="#" onclick="navigateTo('landing')">Landing Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       3. CORE SYSTEM DASHBOARD LAYOUT
+       ========================================================================== -->
+    <div id="dashboard-view" class="dashboard-container" style="display: none;">
+        
+        <!-- Sidebar Controls -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-container">
+                    <div class="logo-icon">D</div>
+                    <div class="logo-text">DORMIQ OS</div>
+                    <span id="role-nav-badge" class="logo-tag">Student</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu" id="sidebar-links-container">
+                <!-- Links populated in app.js -->
+            </nav>
+
+            <div class="sidebar-user">
+                <div class="avatar" id="user-avatar-icon"><i data-lucide="user"></i></div>
+                <div class="sidebar-user-details">
+                    <h5 id="user-display-name">Aarav Mehta</h5>
+                    <p id="user-display-meta">Room 304, Alpha Block</p>
+                </div>
+                <i data-lucide="log-out" onclick="logOut()" style="margin-left:auto; cursor:pointer; color:var(--text-muted); width:18px;" title="Sign Out"></i>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content Panel -->
+        <main class="main-content">
+            
+            <!-- Flashing Red Emergency Warning Bar -->
+            <div class="emergency-broadcast-bar" id="active-emergency-banner" style="display:none;">
+                <i data-lucide="alert-triangle"></i>
+                <span>EMERGENCY ALERT: Security Lockout active. Warden sarah.jenkins triggered emergency protocols. Report to your assigned rooms immediately.</span>
+            </div>
+
+            <!-- Top Search & Notification Action Row -->
+            <div class="top-navbar">
+                <div class="nav-search" onclick="openCommandPalette()">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Press Ctrl+K or search..." readonly>
+                    <span class="nav-search-kbd">Ctrl K</span>
+                </div>
+                <div class="top-navbar-actions">
+                    <div class="notification-hub" onclick="toggleNotificationPanel()">
+                        <i data-lucide="bell" style="width: 20px;"></i>
+                        <span class="notification-badge" id="alert-dot" style="display:none;"></span>
+                        
+                        <!-- Notifications Hub -->
+                        <div id="notification-box" class="glass-card" style="display:none; position:absolute; top:50px; right:0; width:340px; z-index:1500; cursor:default; background:rgba(10, 15, 26, 0.95); max-height:400px; overflow-y:auto;">
+                            <h5 style="margin-bottom:12px; border-bottom:1px solid var(--border-color); padding-bottom:6px;">Notification Alert Center</h5>
+                            <div id="notification-list" style="display:flex; flex-direction:column; gap:10px;">
+                                <!-- Live alerts -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="navigateToScreen('mobile-view')" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                        <i data-lucide="smartphone"></i> Mobile View
+                    </button>
+                </div>
+            </div>
+
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <span>DormIQ OS</span>
+                <span>/</span>
+                <span id="breadcrumb-current-view" class="current">Dashboard Overview</span>
+            </div>
+
+            <!-- Dashboard Skeleton Loader (flashes during loading states) -->
+            <div id="dashboard-skeleton" style="display:none;">
+                <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:20px; margin-bottom:30px;">
+                    <div class="glass-card" style="height:100px;"><div class="skeleton-line"></div><div class="skeleton-line" style="width:60%;"></div></div>
+                    <div class="glass-card" style="height:100px;"><div class="skeleton-line"></div><div class="skeleton-line" style="width:60%;"></div></div>
+                    <div class="glass-card" style="height:100px;"><div class="skeleton-line"></div><div class="skeleton-line" style="width:60%;"></div></div>
+                    <div class="glass-card" style="height:100px;"><div class="skeleton-line"></div><div class="skeleton-line" style="width:60%;"></div></div>
+                </div>
+                <div class="glass-card" style="height:300px;"><div class="skeleton-line" style="width:30%;"></div><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line" style="width:80%;"></div></div>
+            </div>
+
+            <!-- ==================================================================
+                 VIEW A: STUDENT EXPERIENCES HUB
+                 ================================================================== -->
+            <section id="screen-student-dash" class="dashboard-screen">
+                <div class="welcome-banner">
+                    <div class="welcome-text">
+                        <h3>Welcome back, <span id="student-name-display">Aarav</span>! 👋</h3>
+                        <p>Alpha Block services are nominal. Your parental consent gates are validated.</p>
+                    </div>
+                    <div style="font-size: 3rem; opacity: 0.2; color:var(--accent);"><i data-lucide="sparkles" style="width:50px; height:50px;"></i></div>
+                </div>
+
+                <div class="quick-stats-row">
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(0, 242, 254, 0.08); color:var(--accent);"><i data-lucide="home"></i></div>
+                        <div class="stat-card-details">
+                            <p>Your Room</p>
+                            <h4 id="student-sh-room">Room 304</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(239, 68, 68, 0.08); color:var(--danger);"><i data-lucide="alert-circle"></i></div>
+                        <div class="stat-card-details">
+                            <p>Open Issues</p>
+                            <h4 id="student-sh-complaints">1</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(139, 92, 246, 0.08); color:var(--purple);"><i data-lucide="key"></i></div>
+                        <div class="stat-card-details">
+                            <p>Gate Pass State</p>
+                            <h4 id="student-sh-pass">Active Outing</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(16, 185, 129, 0.08); color:var(--success);"><i data-lucide="credit-card"></i></div>
+                        <div class="stat-card-details">
+                            <p>Fee Ledger</p>
+                            <h4 id="student-sh-fees">No Dues</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-dashboard-layout">
+                    <!-- Left Feed Column -->
+                    <div style="display:flex; flex-direction:column; gap:30px;">
+                        <!-- Campus Announcements -->
+                        <div class="glass-card">
+                            <h4 class="feed-title">Campus Hub Broadcasts</h4>
+                            <div style="display:flex; flex-direction:column; gap:16px;">
+                                <div style="border-left: 2px solid var(--accent); padding-left:16px;">
+                                    <span style="font-size:0.75rem; color:var(--accent); font-weight:600;">ADMINISTRATION &bull; TODAY</span>
+                                    <h5 style="font-size:0.95rem; margin-top:2px;">Annual Hostel Utility Audits</h5>
+                                    <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">Technicians will check electrical meters in Blocks Alpha and Beta between 10:00 AM and 4:00 PM tomorrow. Please ensure room accessibility.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Local history log table -->
+                        <div class="glass-card">
+                            <h4 class="feed-title">Local Activity Register</h4>
+                            <div class="custom-table-container">
+                                <table class="custom-table" id="sh-activity-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Category</th>
+                                            <th>Activity Log</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Javascript filled items -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Quick Actions Column -->
+                    <div>
+                        <div class="glass-card">
+                            <h4 class="feed-title">Experience Actions</h4>
+                            <div class="quick-actions-panel">
+                                <div class="action-row-btn" onclick="navigateToScreen('complaints')">
+                                    <div class="action-row-btn-details">
+                                        <i data-lucide="tool" style="color:var(--accent);"></i>
+                                        <div>
+                                            <h5>Smart Complaint Center</h5>
+                                            <p>Submit and categorise repairs</p>
+                                        </div>
+                                    </div>
+                                    <i data-lucide="chevron-right" style="color:var(--text-muted);"></i>
+                                </div>
+                                <div class="action-row-btn" onclick="navigateToScreen('gatepass')">
+                                    <div class="action-row-btn-details">
+                                        <i data-lucide="qr-code" style="color:var(--accent);"></i>
+                                        <div>
+                                            <h5>Outbound Gate Pass</h5>
+                                            <p>Rotating QR access codes</p>
+                                        </div>
+                                    </div>
+                                    <i data-lucide="chevron-right" style="color:var(--text-muted);"></i>
+                                </div>
+                                <div class="action-row-btn" onclick="navigateToScreen('leaves')">
+                                    <div class="action-row-btn-details">
+                                        <i data-lucide="calendar" style="color:var(--accent);"></i>
+                                        <div>
+                                            <h5>Smart Outing Leave</h5>
+                                            <p>Outing approvals workflow</p>
+                                        </div>
+                                    </div>
+                                    <i data-lucide="chevron-right" style="color:var(--text-muted);"></i>
+                                </div>
+                                <div class="action-row-btn" onclick="navigateToScreen('visitors')">
+                                    <div class="action-row-btn-details">
+                                        <i data-lucide="user-plus" style="color:var(--accent);"></i>
+                                        <div>
+                                            <h5>Register Visitor Pass</h5>
+                                            <p>Pre-register parents and friends</p>
+                                        </div>
+                                    </div>
+                                    <i data-lucide="chevron-right" style="color:var(--text-muted);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW B: SMART COMPLAINT CENTER
+                 ================================================================== -->
+            <section id="screen-complaints" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Smart Complaint Incident Desk</h2>
+                        <p>AI scans input text for urgency categorisation and assigns operations specialists.</p>
+                    </div>
+                </div>
+
+                <div class="complaint-view-grid">
+                    <!-- Form -->
+                    <div class="glass-card">
+                        <h4 class="feed-title">Log Facility Report</h4>
+                        <form onsubmit="submitComplaint(event)">
+                            <div class="form-group">
+                                <label for="complaint-title">Short Title</label>
+                                <input type="text" id="complaint-title" class="input-field" placeholder="e.g. Slow water flow in bathroom, flickering LED" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="complaint-desc">Full Description (AI scans keywords on keystroke)</label>
+                                <textarea id="complaint-desc" class="input-field" rows="4" placeholder="Explain the issue in detail. E.g. Bathroom washroom tap in Alpha 304 has a water leak and floor is flooded..." oninput="simulateAIAnalysis()" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" style="margin-top:10px;">
+                                File Operations Report <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- AI Analysis Box -->
+                    <div class="glass-card ai-helper-card">
+                        <div class="ai-header">
+                            <i data-lucide="sparkles"></i>
+                            <h4>AI Dispatch Pipeline Analysis</h4>
+                        </div>
+                        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.5; margin-bottom:20px;">
+                            Our natural language processing engine scans text inputs to predict categorization models, prevent false emergencies, and allocate resources efficiently.
+                        </p>
+                        
+                        <div class="ai-analysis-results">
+                            <div class="ai-result-row">
+                                <span class="ai-result-label">Status</span>
+                                <span class="ai-result-val" style="color:var(--accent);"><span class="ai-status-pulse"></span> Processing Input...</span>
+                            </div>
+                            <div class="ai-result-row">
+                                <span class="ai-result-label">Predicted Class</span>
+                                <span class="ai-result-val" id="ai-predicted-class">Determining...</span>
+                            </div>
+                            <div class="ai-result-row">
+                                <span class="ai-result-label">Urgency Priority</span>
+                                <span class="ai-result-val" id="ai-predicted-urgency">Determining...</span>
+                            </div>
+                            <div class="ai-result-row">
+                                <span class="ai-result-label">Target Dispatch SLA</span>
+                                <span class="ai-result-val" id="ai-predicted-sla">Calculating...</span>
+                            </div>
+                            <div class="ai-result-row">
+                                <span class="ai-result-label">Assigned Specialist</span>
+                                <span class="ai-result-val" id="ai-predicted-tech">Assigning...</span>
+                            </div>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="timeline-container" style="margin-top:24px;">
+                            <h5 style="margin-bottom:14px; font-size:0.85rem; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Dispatch Timeline</h5>
+                            <div class="timeline" id="active-complaint-timeline">
+                                <div class="timeline-item" id="timeline-step-1">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-info">
+                                        <h5>Submission received</h5>
+                                        <p>Logged in digital database</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" id="timeline-step-2">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-info">
+                                        <h5>AI classification dispatch</h5>
+                                        <p>Urgency analyzed, routed to department</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" id="timeline-step-3">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-info">
+                                        <h5>Technician assigned</h5>
+                                        <p>Work order dispatched to mobile client</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item" id="timeline-step-4">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-info">
+                                        <h5>Resolution resolved</h5>
+                                        <p>Warden sign-off validated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complaint List -->
+                <div class="glass-card" style="margin-top:30px;">
+                    <h4 class="feed-title">All Tracked Incidents</h4>
+                    <div class="custom-table-container">
+                        <table class="custom-table" id="complaints-list-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Resident</th>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS values -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW C: SMART LEAVE WORKFLOW
+                 ================================================================== -->
+            <section id="screen-leaves" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Smart Outing Leave Workflows</h2>
+                        <p>Automated parent consent checker and multi-level warden approval lists.</p>
+                    </div>
+                </div>
+
+                <div class="student-dashboard-layout">
+                    <div class="glass-card">
+                        <h4 class="feed-title">File Outing Request</h4>
+                        <form onsubmit="submitLeave(event)">
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                                <div class="form-group">
+                                    <label for="leave-start">Departure Datetime</label>
+                                    <input type="datetime-local" id="leave-start" class="input-field" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="leave-end">Arrival Datetime</label>
+                                    <input type="datetime-local" id="leave-end" class="input-field" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="leave-dest">Destination Address</label>
+                                <input type="text" id="leave-dest" class="input-field" placeholder="Parent residence or home address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="leave-reason">Purpose of Leave</label>
+                                <textarea id="leave-reason" class="input-field" rows="3" placeholder="Explain the reason for leaving campus" required></textarea>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:10px; margin: 15px 0;">
+                                <input type="checkbox" id="parent-sms-notified" checked disabled style="width:18px; height:18px; accent-color:var(--accent);">
+                                <label for="parent-sms-notified" style="font-size:0.8rem; color:var(--text-muted);">
+                                    Parent verification loop will launch. Exit pass requires parent consensus approval.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                File Outing Request <i data-lucide="check-square"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Guidelines -->
+                    <div class="glass-card">
+                        <h4 class="feed-title">Outing Directives</h4>
+                        <ul style="display:flex; flex-direction:column; gap:14px; font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+                            <li>
+                                <strong style="color:var(--text-primary);"><i data-lucide="clock" style="width:14px; color:var(--accent); display:inline-block; vertical-align:middle; margin-right:4px;"></i> Outstation leaves</strong><br>
+                                Must be requested at least 24 hours prior to travel.
+                            </li>
+                            <li>
+                                <strong style="color:var(--text-primary);"><i data-lucide="users" style="width:14px; color:var(--warning); display:inline-block; vertical-align:middle; margin-right:4px;"></i> Parent verification</strong><br>
+                                Parents will receive an SMS consent link. Warden approvals unlock post parent approvals.
+                            </li>
+                            <li>
+                                <strong style="color:var(--text-primary);"><i data-lucide="key" style="width:14px; color:var(--success); display:inline-block; vertical-align:middle; margin-right:4px;"></i> Gate Pass Auto-Generation</strong><br>
+                                Approved outings generate secure self-rotating QR gate passes automatically.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="margin-top:30px;">
+                    <h4 class="feed-title">All Historical Outings</h4>
+                    <div class="custom-table-container">
+                        <table class="custom-table" id="leaves-list-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Resident</th>
+                                    <th>Destination</th>
+                                    <th>Departure / Return</th>
+                                    <th>Parent Consent</th>
+                                    <th>Warden Grant</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS elements -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW D: DIGITAL ACCESS MANAGEMENT
+                 ================================================================== -->
+            <section id="screen-gatepass" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Digital Access Control & Security logs</h2>
+                        <p>Self-rotating secure entry tokens. Scan at the checkpoint terminal to log entry or exit.</p>
+                    </div>
+                </div>
+
+                <div class="gatepass-view-container">
+                    <div class="gatepass-pass-container">
+                        <div class="gatepass-card-wrap">
+                            <div class="gatepass-card-header">
+                                <h4 style="font-family:var(--font-heading); font-size:1.2rem; color:var(--text-primary); margin-bottom:4px;">DORMIQ SECURITY PASS</h4>
+                                <span class="badge badge-success" id="gatepass-status-badge">Valid pass token</span>
+                            </div>
+                            
+                            <div class="qr-code-holder">
+                                <div class="qr-canvas-placeholder" id="qr-display-area">
+                                    <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap:2px; width:100%; height:100%;" id="qr-grid-pixels">
+                                        <!-- Generated pixels in JS -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="timer-countdown">
+                                <p style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:4px;">Secure Token Rotates In</p>
+                                <span class="timer-value" id="gatepass-timer">00:15</span>
+                                <div class="timer-bar-wrap">
+                                    <div class="timer-bar-fill" id="gatepass-timer-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="gatepass-details">
+                                <div class="gatepass-detail-row">
+                                    <span class="gatepass-detail-label">RESIDENT</span>
+                                    <span class="gatepass-detail-val" id="gatepass-resident-name">Aarav Mehta</span>
+                                </div>
+                                <div class="gatepass-detail-row">
+                                    <span class="gatepass-detail-label">ROOM</span>
+                                    <span class="gatepass-detail-val" id="gatepass-resident-room">Room 304 | Block Alpha</span>
+                                </div>
+                                <div class="gatepass-detail-row">
+                                    <span class="gatepass-detail-label">PASS TYPE</span>
+                                    <span class="gatepass-detail-val" id="gatepass-pass-type">Local Outing</span>
+                                </div>
+                                <div class="gatepass-detail-row">
+                                    <span class="gatepass-detail-label">KEY STAMP</span>
+                                    <span class="gatepass-detail-val">Active OTP Sync</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logs -->
+                    <div class="glass-card" style="flex-grow: 1;">
+                        <h4 class="feed-title">Access Point Log</h4>
+                        <div class="custom-table-container">
+                            <table class="custom-table" id="gatepass-logs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Timestamp</th>
+                                        <th>Resident</th>
+                                        <th>Direction</th>
+                                        <th>Access Point</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- JS insertion -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW E: VISITOR INTELLIGENCE CENTER
+                 ================================================================== -->
+            <section id="screen-visitors" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Visitor Intelligence & Pre-Approvals</h2>
+                        <p>Pre-register campus guests to generate digital check-in passes.</p>
+                    </div>
+                </div>
+
+                <div class="student-dashboard-layout">
+                    <div class="glass-card">
+                        <h4 class="feed-title">Pre-Register Guest</h4>
+                        <form onsubmit="submitVisitor(event)">
+                            <div class="form-group">
+                                <label for="visitor-name">Visitor's Full Name</label>
+                                <input type="text" id="visitor-name" class="input-field" placeholder="e.g. Vikram Mehta" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visitor-relation">Relationship</label>
+                                <input type="text" id="visitor-relation" class="input-field" placeholder="e.g. Parent, Friend, Courier" required>
+                            </div>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                                <div class="form-group">
+                                    <label for="visitor-phone">Phone Number</label>
+                                    <input type="tel" id="visitor-phone" class="input-field" placeholder="9988776655" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="visitor-date">Expected Arrival Date</label>
+                                    <input type="date" id="visitor-date" class="input-field" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary" style="margin-top:10px;">
+                                Create Access Code <i data-lucide="user-check"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 class="feed-title">Active Guest QR Code</h4>
+                        <div id="active-visitor-pass" style="text-align:center; padding:10px 0;">
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Register a visitor to generate their pre-approval scan card.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visitors Log -->
+                <div class="glass-card" style="margin-top:30px;">
+                    <h4 class="feed-title">Visitor Ledger Logs</h4>
+                    <div class="custom-table-container">
+                        <table class="custom-table" id="visitors-list-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Guest Name</th>
+                                    <th>Host Student</th>
+                                    <th>Relation</th>
+                                    <th>Expected Date</th>
+                                    <th>Status</th>
+                                    <th>Security Gate Check</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS inserts -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW F: ROOM & OCCUPANCY INTELLIGENCE (Heatmap & allocations)
+                 ================================================================== -->
+            <section id="screen-allocation" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Room Occupancy Grid Heatmap</h2>
+                        <p>Visual blueprints indicating real-time occupancy. Saturations represent slot allocations.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card blueprint-container">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                        <div class="floor-tabs">
+                            <button class="floor-btn active" data-floor="1" onclick="switchAllocFloor(1)">Floor 1 (Alpha)</button>
+                            <button class="floor-btn" data-floor="2" onclick="switchAllocFloor(2)">Floor 2 (Alpha)</button>
+                            <button class="floor-btn" data-floor="3" onclick="switchAllocFloor(3)">Floor 3 (Alpha)</button>
+                        </div>
+                        <div style="display:flex; gap:14px; font-size:0.8rem;">
+                            <span style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:rgba(16, 185, 129, 0.1); border:1px solid var(--success);"></span> Vacant (0%)</span>
+                            <span style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:rgba(0, 242, 254, 0.1); border:1px solid var(--accent);"></span> Available (50%)</span>
+                            <span style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:rgba(15, 23, 42, 0.6); border:1px solid var(--border-color);"></span> Full (100%)</span>
+                            <span style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:3px; background:rgba(245, 158, 11, 0.1); border:1px solid var(--warning);"></span> Repairs</span>
+                        </div>
+                    </div>
+
+                    <!-- Heatmap Grid -->
+                    <div class="heatmap-grid" id="alloc-rooms-grid">
+                        <!-- JS generated nodes -->
+                    </div>
+
+                    <!-- Interactive Inspector dialog -->
+                    <div id="room-inspector-card" class="glass-card inspector-panel" style="display:none;">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px;">
+                            <div>
+                                <h4 style="font-size:1.2rem;" id="inspect-room-number">Room 101 Inspector</h4>
+                                <span class="badge badge-success" id="inspect-room-badge" style="margin-top:6px;">Vacant</span>
+                            </div>
+                            <i data-lucide="x" onclick="closeRoomInspector()" style="cursor:pointer; width:16px;"></i>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:30px;">
+                            <div>
+                                <h5 style="font-size:0.8rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px;">Active Occupants</h5>
+                                <div id="inspect-occupants-list" style="display:flex; flex-direction:column; gap:8px;">
+                                    <!-- List -->
+                                </div>
+                            </div>
+                            <div>
+                                <h5 style="font-size:0.8rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px;">Allocate Space</h5>
+                                <div class="form-group" style="margin-bottom:12px;">
+                                    <select id="alloc-student-select" class="input-field" style="padding:10px; font-size:0.85rem;">
+                                        <!-- Load unassigned students -->
+                                    </select>
+                                </div>
+                                <button onclick="assignStudentToRoom()" class="btn-primary" style="width:100%; justify-content:center; padding:10px; font-size:0.85rem;">
+                                    Allocate Resident
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW G: ADMIN COMMAND CENTER
+                 ================================================================== -->
+            <section id="screen-admin-dash" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Operations Command Hub</h2>
+                        <p>Overview of campus logistics, occupancy data, and security metrics.</p>
+                    </div>
+                </div>
+
+                <div class="quick-stats-row">
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(0, 242, 254, 0.08); color:var(--accent);"><i data-lucide="users"></i></div>
+                        <div class="stat-card-details">
+                            <p>Total Residents</p>
+                            <h4 id="admin-stat-students">120</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(59, 130, 246, 0.08); color:var(--info);"><i data-lucide="layout"></i></div>
+                        <div class="stat-card-details">
+                            <p>Occupancy Density</p>
+                            <h4 id="admin-stat-occupancy">91.6%</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(239, 68, 68, 0.08); color:var(--danger);"><i data-lucide="tool"></i></div>
+                        <div class="stat-card-details">
+                            <p>Pending Dispatches</p>
+                            <h4 id="admin-stat-complaints">4</h4>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="stat-card-icon" style="background:rgba(139, 92, 246, 0.08); color:var(--purple);"><i data-lucide="eye"></i></div>
+                        <div class="stat-card-details">
+                            <p>Guests Checked In</p>
+                            <h4 id="admin-stat-visitors">6</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-dashboard-layout">
+                    <!-- Logs feed -->
+                    <div>
+                        <div class="glass-card">
+                            <h4 class="feed-title">Command Central Live Activity Log</h4>
+                            <div id="admin-live-activity-feed" style="display:flex; flex-direction:column; gap:12px;">
+                                <!-- Feeds -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shortcut controls -->
+                    <div>
+                        <div class="glass-card">
+                            <h4 class="feed-title">Administrator Tools</h4>
+                            <div style="display:flex; flex-direction:column; gap:12px;">
+                                <button onclick="navigateToScreen('allocation')" class="btn-secondary" style="justify-content:flex-start;">
+                                    <i data-lucide="map"></i> Room Allocator Matrices
+                                </button>
+                                <button onclick="navigateToScreen('complaints')" class="btn-secondary" style="justify-content:flex-start;">
+                                    <i data-lucide="tool"></i> Open Dispatches Table
+                                </button>
+                                <button onclick="navigateToScreen('ai-intelligence')" class="btn-primary" style="justify-content:center;">
+                                    <i data-lucide="brain"></i> Launch AI Intelligence Hub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW H: AI INTELLIGENCE LAYER
+                 ================================================================== -->
+            <section id="screen-ai-intelligence" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>DormIQ OS Neural Engine</h2>
+                        <p>Predictive maintenance alerts, occupancy forecasts, and visitor pattern analysis models.</p>
+                    </div>
+                </div>
+
+                <div class="ai-insights-grid">
+                    <!-- Column A: Charts -->
+                    <div style="display:flex; flex-direction:column; gap:30px;">
+                        <div class="glass-card">
+                            <h4 class="feed-title">Hostel Occupancy & Capacity Forecast</h4>
+                            <div class="chart-wrapper">
+                                <canvas id="chart-occupancy-forecast"></canvas>
+                            </div>
+                        </div>
+                        <div class="glass-card">
+                            <h4 class="feed-title">Visitor Loading Peak Flow (Hourly Scans)</h4>
+                            <div class="chart-wrapper">
+                                <canvas id="chart-visitor-patterns"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column B: Health and Warnings -->
+                    <div style="display:flex; flex-direction:column; gap:30px;">
+                        <div class="glass-card radial-score-container">
+                            <h4 class="feed-title" style="width:100%; text-align:left;">Campus Living Health Index</h4>
+                            <div class="radial-score-ring">
+                                <svg width="140" height="140" viewBox="0 0 140 140">
+                                    <circle cx="70" cy="70" r="60" stroke="rgba(255,255,255,0.03)" stroke-width="7" fill="none"></circle>
+                                    <circle cx="70" cy="70" r="60" stroke="var(--accent)" stroke-width="7" fill="none" stroke-dasharray="377" stroke-dashoffset="20" stroke-linecap="round"></circle>
+                                </svg>
+                                <span class="radial-score-value" style="position:absolute;">94.8%</span>
+                            </div>
+                            <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5; text-align:center; max-width:300px;">Composite metrics based on average repair SLA speeds, gate pass compliance, and visitor clearance rates.</p>
+                        </div>
+
+                        <!-- Predictive maintenance alerts -->
+                        <div class="glass-card">
+                            <h4 class="feed-title">AI Predictive Infrastructure Risks</h4>
+                            <div style="display:flex; flex-direction:column; gap:12px;">
+                                <div class="glass-card" style="padding:14px; background:rgba(239, 68, 68, 0.02); border-color: rgba(239, 68, 68, 0.15); display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="display:flex; gap:10px; align-items:center;">
+                                        <i data-lucide="alert-triangle" style="color:var(--danger); width:16px;"></i>
+                                        <div>
+                                            <h5 style="font-size:0.85rem;">Alpha Lift B Motor</h5>
+                                            <p style="font-size:0.75rem; color:var(--text-muted);">94% vibration anomaly: Service in 3 days</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge badge-danger">High Risk</span>
+                                </div>
+                                <div class="glass-card" style="padding:14px; background:rgba(251, 191, 36, 0.02); border-color: rgba(251, 191, 36, 0.15); display:flex; justify-content:space-between; align-items:center;">
+                                    <div style="display:flex; gap:10px; align-items:center;">
+                                        <i data-lucide="alert-circle" style="color:var(--warning); width:16px;"></i>
+                                        <div>
+                                            <h5 style="font-size:0.85rem;">HVAC compressor unit C2</h5>
+                                            <p style="font-size:0.75rem; color:var(--text-muted);">74% heat load anomaly: Inspection recommended</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge badge-warning">Medium Risk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Charts and recommendations -->
+                <div class="ai-insights-grid" style="margin-top:30px;">
+                    <div class="glass-card">
+                        <h4 class="feed-title">Incident Category distribution</h4>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-complaint-categories"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h4 class="feed-title">AI Engine Smart Recommendations</h4>
+                        <div class="ai-recommendation-panel">
+                            <div class="ai-rec-card">
+                                <div class="ai-rec-card-icon"><i data-lucide="droplet"></i></div>
+                                <div>
+                                    <h5>Water Utility Balancing</h5>
+                                    <p>Peak consumption detected between 7:15 AM and 8:45 AM. Setting pre-fill cycles to run at 5:45 AM will reduce peak grid energy loads by 12.8%.</p>
+                                </div>
+                            </div>
+                            <div class="ai-rec-card">
+                                <div class="ai-rec-card-icon"><i data-lucide="users"></i></div>
+                                <div>
+                                    <h5>Security Staff Balancing</h5>
+                                    <p>Peak visitor logins occur on Sundays between 4:30 PM and 6:30 PM. Moving one officer from internal Block Alpha patrols to Gate 1 reduces queues.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW I: SECURITY OPERATIONS CENTER (SOC)
+                 ================================================================== -->
+            <section id="screen-soc-dash" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Security Operations Center</h2>
+                        <p>Scanner endpoints controls, RFID validations, and emergency warning consoles.</p>
+                    </div>
+                </div>
+
+                <div class="soc-grid">
+                    <!-- Left: terminal and actions -->
+                    <div style="display:flex; flex-direction:column; gap:30px;">
+                        <!-- Scanner console output simulator -->
+                        <div class="glass-card">
+                            <h4 class="feed-title">RFID Checkpoint Log Terminal</h4>
+                            <div class="terminal-box" id="soc-terminal-logs">
+                                <div class="terminal-line"><span class="time">[15:30:12]</span> RFID Reader #1 initialized. Status: Connected</div>
+                                <div class="terminal-line"><span class="time">[15:32:04]</span> Verification request: Pass LVE-9021. Valid. Logged: Exit</div>
+                                <div class="terminal-line"><span class="time">[15:45:10]</span> Verification request: Visitor Pass VST-1102. Valid. Logged: Entry</div>
+                            </div>
+                        </div>
+
+                        <!-- Checkpoint scanners trigger simulator -->
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                            <div class="glass-card">
+                                <h5>Simulation: Student QR Scanner</h5>
+                                <p style="font-size:0.8rem; color:var(--text-muted); margin: 8px 0 16px 0;">Trigger check-ins/outs for student Aarav Mehta.</p>
+                                <button onclick="triggerSecurityScan()" class="btn-primary" style="width:100%; justify-content:center;">
+                                    <i data-lucide="scan"></i> Scan Student QR
+                                </button>
+                            </div>
+                            <div class="glass-card">
+                                <h5>Simulation: RFID Guest Card</h5>
+                                <p style="font-size:0.8rem; color:var(--text-muted); margin: 8px 0 16px 0;">Trigger RFID gate checks for pre-registered visitor Vikram Mehta.</p>
+                                <button onclick="triggerGuestRFIDScan()" class="btn-secondary" style="width:100%; justify-content:center; color:#A78BFA; border-color:rgba(139, 92, 246, 0.3);">
+                                    <i data-lucide="credit-card"></i> Scan Guest Card
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Emergency Lockdown console -->
+                    <div class="glass-card" style="border-color:rgba(239, 68, 68, 0.2); background:rgba(239, 68, 68, 0.01);">
+                        <h4 class="feed-title" style="color:var(--danger); border-color:rgba(239, 68, 68, 0.15);">Lockdown console</h4>
+                        <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; margin-bottom:20px;">
+                            Activating emergency lockdown broadcasts a red flashing status banner to all dashboards, freezes gate QR rotations, and logs anomalies.
+                        </p>
+                        
+                        <div style="display:flex; flex-direction:column; gap:14px;">
+                            <button id="btn-emergency-broadcast" onclick="toggleEmergencyBroadcast()" class="btn-primary" style="background:var(--danger); color:#fff; box-shadow:none; justify-content:center; border: 1px solid rgba(239, 68, 68, 0.3);">
+                                <i data-lucide="alert-triangle"></i> Broadcast Lockdown
+                            </button>
+                            <div class="glass-card" style="padding:14px; background:rgba(255,255,255,0.01); font-size:0.8rem;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px;"><span>System Code:</span><strong>OS-SEC-902</strong></div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px;"><span>Sensors:</span><span style="color:var(--success);">Active (5/5)</span></div>
+                                <div style="display:flex; justify-content:space-between;"><span>Lockdown Status:</span><span id="soc-lockdown-status" style="color:var(--text-muted);">Inactive</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW J: PARENTS VIEW PORTAL
+                 ================================================================== -->
+            <section id="screen-parent-portal" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Parent Consensus Portal</h2>
+                        <p>Monitor your ward's campus logs, leave history, and verify consent approvals.</p>
+                    </div>
+                </div>
+
+                <div class="parent-grid">
+                    <!-- Ward Profile details -->
+                    <div class="glass-card">
+                        <h4 class="feed-title">Ward Information: Aarav Mehta</h4>
+                        <div style="display:flex; flex-direction:column; gap:16px; font-size:0.85rem;">
+                            <div style="display:flex; justify-content:space-between; padding-bottom:8px; border-bottom:1px solid var(--border-color);">
+                                <span style="color:var(--text-muted);">Room Assignment:</span>
+                                <strong>Block Alpha, Room 304</strong>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; padding-bottom:8px; border-bottom:1px solid var(--border-color);">
+                                <span style="color:var(--text-muted);">Fees ledger status:</span>
+                                <span class="badge badge-success">No dues</span>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; padding-bottom:8px; border-bottom:1px solid var(--border-color);">
+                                <span style="color:var(--text-muted);">Last exit record:</span>
+                                <strong>Today, 12:15 PM (Exit)</strong>
+                            </div>
+                            <div style="display:flex; justify-content:space-between;">
+                                <span style="color:var(--text-muted);">Consensus requests:</span>
+                                <strong id="parent-sh-pending-leaves" style="color:var(--warning);">1 request pending</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ward emergency contacts -->
+                    <div class="glass-card">
+                        <h4 class="feed-title">Campus Emergency Contacts</h4>
+                        <div class="contacts-list">
+                            <div class="contact-item">
+                                <div>
+                                    <h5 style="font-size:0.9rem;">Warden Jenkins Sarah</h5>
+                                    <p style="font-size:0.75rem; color:var(--text-muted);">Alpha Block warden supervisor</p>
+                                </div>
+                                <span style="color:var(--accent); font-weight:600; font-size:0.85rem;">+91 98765 00001</span>
+                            </div>
+                            <div class="contact-item">
+                                <div>
+                                    <h5 style="font-size:0.9rem;">Security Operations Desk</h5>
+                                    <p style="font-size:0.75rem; color:var(--text-muted);">Main Gate Terminal</p>
+                                </div>
+                                <span style="color:var(--accent); font-weight:600; font-size:0.85rem;">+91 98765 00003</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leave approvals tables -->
+                <div class="glass-card" style="margin-top:30px;">
+                    <h4 class="feed-title">Pending Consensus Outings</h4>
+                    <div class="custom-table-container">
+                        <table class="custom-table" id="parent-leaves-list-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Destination</th>
+                                    <th>Departure Date</th>
+                                    <th>Return Date</th>
+                                    <th>Consensus Stamp</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS items -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 VIEW K: SMARTPHONE MOBILE SIMULATOR VIEW
+                 ================================================================== -->
+            <section id="screen-mobile-view" class="dashboard-screen">
+                <div class="screen-header">
+                    <div>
+                        <h2>Mobile-First Resident Interface</h2>
+                        <p>Interact with the student mobile view in real time. Ideal for scanning at checkpoints.</p>
+                    </div>
+                </div>
+
+                <div class="simulator-view-container">
+                    <div class="landing-info-desc" style="max-width: 400px;">
+                        <div class="glass-card" style="margin-bottom:20px;">
+                            <h4 style="color:var(--accent); margin-bottom:12px;">Mobile app simulation</h4>
+                            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; margin-bottom:12px;">
+                                This phone emulator runs the mobile student app. It is dynamically synced to the main database state.
+                            </p>
+                            <ul style="display:flex; flex-direction:column; gap:10px; font-size:0.8rem; color:var(--text-muted);">
+                                <li><i data-lucide="check" style="color:var(--accent); width:14px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> Tap footer buttons inside the screen to change mobile pages.</li>
+                                <li><i data-lucide="check" style="color:var(--accent); width:14px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> Log complaints directly inside the mobile client.</li>
+                                <li><i data-lucide="check" style="color:var(--accent); width:14px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> Verify state synchronization when toggling views.</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card">
+                            <h5>Simulate Terminal Scans</h5>
+                            <p style="font-size:0.8rem; color:var(--text-muted); margin: 6px 0 14px 0;">Verify gate entry/exit logging triggers.</p>
+                            <button onclick="triggerSecurityScan()" class="btn-primary" style="width:100%; justify-content:center;">
+                                <i data-lucide="scan"></i> Scan Pass QR
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CSS Phone layout -->
+                    <div class="phone-chassis">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <!-- Header -->
+                            <div class="phone-screen-header">
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="logo-icon" style="width:24px; height:24px; font-size:0.85rem;">D</div>
+                                    <h4 style="font-size:1.05rem;">DormIQ OS</h4>
+                                </div>
+                                <div style="position:relative;">
+                                    <i data-lucide="bell" style="width:16px; color:var(--text-muted);"></i>
+                                    <span class="notification-badge" id="mobile-alert-dot" style="display:none; width:6px; height:6px; top:0; right:0;"></span>
+                                </div>
+                            </div>
+                            
+                            <!-- Scrollable viewports -->
+                            <div class="phone-screen-body">
+                                
+                                <!-- Mobile Dashboard -->
+                                <div class="mobile-sub-screen active" id="mobile-sub-dash">
+                                    <div style="background:rgba(0, 242, 254, 0.06); border:1px solid rgba(0, 242, 254, 0.15); border-radius:12px; padding:14px; margin-bottom:14px;">
+                                        <h5 style="font-size:0.9rem;">Aarav Mehta</h5>
+                                        <p style="font-size:0.7rem; color:var(--text-muted); margin-top:2px;">Room 304 &bull; Block Alpha</p>
+                                    </div>
+                                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
+                                        <div class="glass-card" style="padding:10px; text-align:center;">
+                                            <p style="font-size:0.6rem; color:var(--text-muted);">ISSUES</p>
+                                            <h4 style="font-size:1.15rem; color:var(--danger);" id="mobile-dash-complaints">0</h4>
+                                        </div>
+                                        <div class="glass-card" style="padding:10px; text-align:center;">
+                                            <p style="font-size:0.6rem; color:var(--text-muted);">PASS CODE</p>
+                                            <h4 style="font-size:1.15rem; color:var(--accent);" id="mobile-dash-pass">Local</h4>
+                                        </div>
+                                    </div>
+                                    <h5 style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:10px;">Quick Shortcuts</h5>
+                                    <div style="display:flex; flex-direction:column; gap:8px;">
+                                        <div class="mobile-action-card" onclick="switchMobileSubScreen('pass')">
+                                            <i data-lucide="qr-code" style="color:var(--accent); width:18px;"></i>
+                                            <div>
+                                                <h6 style="font-size:0.75rem; font-weight:600;">Display QR Code</h6>
+                                                <p style="font-size:0.6rem; color:var(--text-muted); margin-top:1px;">Hold pass against scanner barcode</p>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-action-card" onclick="switchMobileSubScreen('complaints')">
+                                            <i data-lucide="alert-circle" style="color:var(--warning); width:18px;"></i>
+                                            <div>
+                                                <h6 style="font-size:0.75rem; font-weight:600;">File AI Incident</h6>
+                                                <p style="font-size:0.6rem; color:var(--text-muted); margin-top:1px;">Natural language parsing report</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Complaints -->
+                                <div class="mobile-sub-screen" id="mobile-sub-complaints">
+                                    <h5 style="font-size:0.95rem; margin-bottom:12px;">Submit AI Incident</h5>
+                                    <form onsubmit="submitMobileComplaint(event)">
+                                        <div class="form-group" style="gap:4px; margin-bottom:10px;">
+                                            <label style="font-size:0.75rem;">Short Title</label>
+                                            <input type="text" id="mobile-complaint-title" class="input-field" placeholder="e.g. WiFi router down" style="padding:10px;" required>
+                                        </div>
+                                        <div class="form-group" style="gap:4px; margin-bottom:10px;">
+                                            <label style="font-size:0.75rem;">Description</label>
+                                            <textarea id="mobile-complaint-desc" class="input-field" rows="3" placeholder="Explain details..." style="padding:10px;" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:10px; font-size:0.8rem;">
+                                            File Dispatch Now
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- Mobile Pass -->
+                                <div class="mobile-sub-screen" id="mobile-sub-pass" style="text-align:center;">
+                                    <h5 style="font-size:0.95rem; margin-bottom:12px;">Outbound Security Pass</h5>
+                                    <div style="background:#fff; width:150px; height:150px; margin: 10px auto; padding:10px; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                                        <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap:1.5px; width:100%; height:100%;" id="mobile-qr-pixels">
+                                            <!-- Pixels in JS -->
+                                        </div>
+                                    </div>
+                                    <p style="font-size:0.65rem; color:var(--text-muted); margin-top:8px;">Rotates in <span id="mobile-timer-val" style="color:var(--accent); font-family:monospace; font-weight:700;">15s</span></p>
+                                    <div class="timer-bar-wrap" style="width:100px; height:3px; margin-top:6px;">
+                                        <div class="timer-bar-fill" id="mobile-timer-bar"></div>
+                                    </div>
+                                    <div style="margin-top:20px; font-size:0.75rem; text-align:left; display:flex; flex-direction:column; gap:8px; background:rgba(255,255,255,0.01); padding:10px; border-radius:8px;">
+                                        <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Resident:</span><strong>Aarav Mehta</strong></div>
+                                        <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-muted);">Room:</span><strong>Room 304</strong></div>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Notifications -->
+                                <div class="mobile-sub-screen" id="mobile-sub-notifications">
+                                    <h5 style="font-size:0.95rem; margin-bottom:12px;">Mobile Alerts</h5>
+                                    <div style="display:flex; flex-direction:column; gap:10px;" id="mobile-notification-list">
+                                        <!-- Populate -->
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <!-- Footer tabs -->
+                            <div class="phone-screen-footer">
+                                <div class="phone-nav-btn active" id="mobile-tab-dash" onclick="switchMobileSubScreen('dash')">
+                                    <i data-lucide="home"></i>
+                                    <span>Home</span>
+                                </div>
+                                <div class="phone-nav-btn" id="mobile-tab-pass" onclick="switchMobileSubScreen('pass')">
+                                    <i data-lucide="qr-code"></i>
+                                    <span>Pass</span>
+                                </div>
+                                <div class="phone-nav-btn" id="mobile-tab-complaints" onclick="switchMobileSubScreen('complaints')">
+                                    <i data-lucide="alert-circle"></i>
+                                    <span>Incident</span>
+                                </div>
+                                <div class="phone-nav-btn" id="mobile-tab-notifications" onclick="switchMobileSubScreen('notifications')">
+                                    <i data-lucide="bell"></i>
+                                    <span>Alerts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- ==========================================================================
+       4. INTERACTIVE KEYBOARD COMMAND PALETTE (CTRL+K)
+       ========================================================================== -->
+    <div id="command-palette" class="command-palette-overlay" onclick="closeCommandPalette(event)">
+        <div class="command-palette" onclick="event.stopPropagation()">
+            <div class="command-search-row">
+                <i data-lucide="search"></i>
+                <input type="text" id="command-input" placeholder="Type a view name or action (e.g. leaves, pass, resolve)..." oninput="filterCommandPalette()">
+            </div>
+            <div class="command-results-list" id="command-results">
+                <!-- Javascript populated options -->
+            </div>
+            <div class="command-palette-footer">
+                <span>Navigate <kbd>↑</kbd> <kbd>↓</kbd> &bull; Select <kbd>Enter</kbd></span>
+                <span>Dismiss <kbd>Esc</kbd></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       5. PERSISTENT ROLE SIMULATOR FLOATING BAR
+       ========================================================================== -->
+    <div class="role-simulator-overlay">
+        <div class="role-bar">
+            <button class="role-btn active" data-role="student" onclick="simulateRoleSwitch('student')">
+                <i data-lucide="user"></i> Student
+            </button>
+            <button class="role-btn" data-role="warden" onclick="simulateRoleSwitch('warden')">
+                <i data-lucide="shield"></i> Warden
+            </button>
+            <button class="role-btn" data-role="admin" onclick="simulateRoleSwitch('admin')">
+                <i data-lucide="cpu"></i> Admin
+            </button>
+            <button class="role-btn" data-role="security" onclick="simulateRoleSwitch('security')">
+                <i data-lucide="eye"></i> Security
+            </button>
+            <button class="role-btn" data-role="parent" onclick="simulateRoleSwitch('parent')">
+                <i data-lucide="users"></i> Parent
+            </button>
+        </div>
+        <span class="role-label" id="role-status-lbl">Active Mode: STUDENT SIMULATOR</span>
+    </div>
+
+    <!-- Swap transitions loaders -->
+    <div class="role-swapping-overlay" id="role-loader">
+        <div class="role-swapping-content">
+            <div class="role-swapping-spinner"></div>
+            <div class="role-swapping-text" id="role-loader-text">Configuring Student Environment...</div>
+        </div>
+    </div>
+
+    <!-- Application Javascript Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
